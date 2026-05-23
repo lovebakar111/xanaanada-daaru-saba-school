@@ -622,35 +622,5 @@ const observer = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('.stat-num[data-target]').forEach(el => observer.observe(el));
 </script>
-
-  <!-- FORM-KAAGA -->
-
-  <script>
-  function sendToWhatsApp() {
-    const name = document.getElementById("name").value;
-    const phone = document.getElementById("phone").value;
-    const age = document.getElementById("age").value;
-    const program = document.getElementById("program").value;
-    const message = document.getElementById("message").value;
-
-    const text = `New Enrollment Enquiry
-
-Parent Name: ${name}
-Phone: ${phone}
-Child Age: ${age}
-Program: ${program}
-Message: ${message}`;
-
-    const whatsappNumber = "252615739566";
-
-    window.open(
-      `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`,
-      "_blank"
-    );
-  }
-  </script>
-<button onclick="sendToWhatsApp()">
- Send Enquiry
-</button>
 </body>
 </html>
